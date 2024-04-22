@@ -16,11 +16,11 @@ header, footer {
     grid-column: 1 / 2;
 }
 
-.projects {
+.project {
     grid-column: 2 / 3;
 }
 
-.services {
+.service {
     grid-column: 3 / 4;
 }
 
@@ -30,7 +30,7 @@ header, footer {
 
 .main {
     grid-column: 1 / 4;
-    background-color: rgb(255, 240, 254);
+    background-color: rgb(255, 240, 255);
 }
 
 .aside {
