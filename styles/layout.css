@@ -1,0 +1,50 @@
+.parent {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr;
+}
+
+header, footer {
+    grid-column: 1 / 5;
+    background-color: plum;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 4rem;
+}
+
+.home {
+    grid-column: 1 / 2;
+}
+
+.projects {
+    grid-column: 2 / 3;
+}
+
+.services {
+    grid-column: 3 / 4;
+}
+
+.contact {
+    grid-column: 4 / 5;
+}
+
+.main {
+    grid-column: 1 / 4;
+    background-color: rgb(255, 240, 254);
+}
+
+.aside {
+    grid-column: 4 / 5;
+}
+
+.home, .projects, .services, .contact {
+    background-color: rgb(223, 208, 236);
+    text-align: center;
+    padding: 1rem
+}
+
+.main, .aside {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 300px;
+}
