@@ -37,7 +37,7 @@ header, footer {
     grid-column: 4 / 5;
 }
 
-.home, .projects, .services, .contact {
+.home, .project, .service, .contact {
     background-color: rgb(223, 208, 236);
     text-align: center;
     padding: 1rem
