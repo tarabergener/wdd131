@@ -7,7 +7,7 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Tara Bergener - Main page with information about me and resources.">
     <meta name="author" content="Tara Bergener">
     <link rel="stylesheet" href="styles/base.css">
-    <script defer src="scripts/getdates.js"></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -54,8 +54,12 @@
         </div>
     </main>
     <footer>
-        <p>&copy;2024 - Tara Bergener - Florida</p>
-        <p id="currentdate"></p>
+        <p>
+            "&copy"
+            <span id="currentYear">2024</span>
+            " - Tara Bergener - Florida"
+        </p>
+        <p id="lastModified">Last Modification: 04/28/2024 00:08:36</p>
     </footer>
 </body>
 </html>
