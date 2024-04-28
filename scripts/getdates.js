@@ -1,1 +1,1 @@
-const currentdate = document.querySelector("currentdate");
+const currentdate = document.lastModified("currentdate");
