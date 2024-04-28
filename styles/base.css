@@ -22,6 +22,10 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.nav:hover {
+    color: #8b8888;
+}
+
 .nav, footer {
     color: #fff;
     text-align: center;
