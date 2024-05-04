@@ -1,3 +1,7 @@
-document.querySelector('.hamburger').addEventListener('click', function() {
-    document.querySelector('.menu').classList.toggle('show');
-  });
+const navmenu = document.querySelector('.navmenu');
+const hamberger = document.querySelector('#hamburger');
+
+hamberger.addEventListener('click', () => {
+	navmenu.classList.toggle('open');
+	hamberger.classList.toggle('open');
+});
