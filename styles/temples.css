@@ -1,4 +1,5 @@
 body {
+
 }
 
 header, main, footer {
@@ -14,6 +15,8 @@ header, footer {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
 }
 
 main {
