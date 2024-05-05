@@ -8,12 +8,12 @@
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
         border: 3px solid #333;
-        padding-left: 17rem;
+        padding-left: 16rem;
         padding-right: 16rem;
     }
 
     h1 {
-        text-decoration: center;
+        padding-left: 0;
     }
 
     section {
@@ -31,6 +31,7 @@
     #hamburger {
         display: none;
     }
+
     .navmenu {
         display: flex;
         justify-content: center;
