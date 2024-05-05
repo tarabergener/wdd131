@@ -28,6 +28,14 @@
         grid-column-end: 4;
     }
 
+    nav {
+        background-color: #4b4a4a;
+    }
+
+    .navmenu li {
+        display: flex;
+    }
+
     #hamburger {
         display: none;
     }
