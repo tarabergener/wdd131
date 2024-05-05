@@ -32,6 +32,11 @@
         background-color: #4b4a4a;
     }
 
+    .navmenu a:hover{
+        color: rgba(47, 134, 134, 0.664)
+        }
+    }
+
     .navmenu li {
         display: flex;
     }
