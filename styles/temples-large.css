@@ -8,12 +8,16 @@
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
         border: 3px solid #333;
-        padding-left: 16rem;
-        padding-right: 16rem;
+    }
+
+    main {
+        
     }
 
     h1 {
         padding-left: 0;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
     section {
@@ -72,5 +76,8 @@
     }
     .navmenu a {
         display: block;
+    }
+    figure {
+        padding-left: 5rem;
     }
 }

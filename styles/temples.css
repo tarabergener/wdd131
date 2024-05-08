@@ -61,7 +61,7 @@ a {
 }
 
 #hamburger.open::before {
-    content: "X";
+    content: "x";
 }
 
 #hamburger {
@@ -81,7 +81,12 @@ a {
 .open a {
     color: rgb(26, 48, 88);
     display: block;
+}
 
+figure {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 footer {
