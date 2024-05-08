@@ -34,7 +34,6 @@
 
     .navmenu a:hover{
         color: rgba(47, 134, 134, 0.664)
-        }
     }
 
     .navmenu li {
@@ -50,6 +49,7 @@
         justify-content: center;
         flex-direction: row;
     }
+
     .navmenu a {
         display: block;
     }
