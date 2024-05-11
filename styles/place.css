@@ -1,0 +1,66 @@
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    color:white;
+    background-color: blue;
+    padding: 1.75rem;
+    margin: 0;
+    border: 15rem;
+    border-color: black;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+main {
+    margin: 0;
+}
+
+.data, .weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+h2, .icon {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 1rem;
+    margin: 0;
+}
+
+.icon {
+    padding: 0;
+}
+
+.alignright {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: right;
+    font-weight: bold;
+    background-color: white;
+}
+
+.alignleft {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: left;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: blue;
+    margin: 0;
+    padding: 20px;
+}

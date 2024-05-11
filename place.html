@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Information Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+</head>
+<body>
+    <header>
+        <h1>Florida</h1>
+        <div class="center">
+            <picture>
+                <source srcset="images/florida-gator-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/florida-gator-large.webp" media="(min-width: 640px")>
+                <img src="images/florida_wildlife.webp" alt="Florida Wildlife">
+            </picture>
+        </div>
+    </header>
+    <main>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="alignright">
+                <p>Area:&nbsp</p>
+                <p >Population:&nbsp</p>
+                <p>Capital:&nbsp</p>
+                <p>Languages:&nbsp</p>
+                <p>Currency:&nbsp</p>
+                <p>Time Zone:&nbsp</p>
+                <p>Area Codes:&nbsp</p>
+                <p>Internet TLD:&nbsp</p>
+            </div>
+            <!-- &nbsp adds space to the content rather than adding padding or margin -->
+            <div class="alignleft">
+                <p>&nbsp65,755 sq mi</p>
+                <p>&nbsp21,300,000</p>
+                <p>&nbspTallahassee</p>
+                <p>&nbspEnglish</p>
+                <p>&nbspUS Dollar</p>
+                <p>&nbspUTC-6</p>
+                <p>&nbsp+239, +305</p>
+                <p>&nbsp.us</p>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="icon">
+                <img src="images/sunny-svg.svg" width="100">
+            </div>
+            <div class="alignright">
+                <p>Temperature:&nbsp</p>
+                <p >Conditions:&nbsp</p>
+                <p>Wind:&nbsp</p>
+                <p>Wind Chill:&nbsp</p>
+            </div>
+            <div class="alignleft">
+                <p>&nbsp</p>
+                <p>&nbsp</p>
+                <p>&nbsp</p>
+                <p>&nbsp</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentYear">2024</span>
+            - Tara Bergener - Florida
+        </p>
+        <p id="lastModified">Last Modification: 04/28/2024 01:28:36</p>
+    </footer>
+    <script defer src="scripts/place.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</body>
+</html>
