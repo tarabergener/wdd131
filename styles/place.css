@@ -14,13 +14,7 @@ h1 {
 
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
-
-main {
-    margin: 0;
+    unicode-bidi: isolate;
 }
 
 .data, .weather {
