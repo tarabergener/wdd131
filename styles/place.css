@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     background-color: rgb(192, 201, 198);
 }
@@ -10,6 +12,8 @@ h1 {
     border: 15rem;
     border-bottom: rgb(15, 79, 104) solid 15px;
     text-align: center;
+    font-family: "IBM Plex Sans", serif;
+    font-size: 50px;
 }
 
 .center {
@@ -21,6 +25,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    font-family: Raleway;
 }
 
 h2, .icon {
@@ -58,4 +63,5 @@ footer {
     background-color: rgb(42, 42, 70);
     margin: 0;
     padding: 20px;
+    font-family: "IBM Plex Sans", serif;
 }
