@@ -1,13 +1,9 @@
 @media screen and (min-width: 700px) {
 
     .center {
+        display: grid;
+        grid-template-columns: 1fr;
         margin: 0;
-    }
-
-    picture {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
     }
 
     .data {
@@ -32,10 +28,14 @@
 
 @media screen and (min-width: 1000px) {
 
+    .center {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     picture {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
     
 }

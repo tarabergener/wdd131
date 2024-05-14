@@ -1,5 +1,7 @@
-const lastModified = document.lastModified("lastModified");
+const lastModified = document.querySelector("#lastModified");
+const currentYear = document.querySelector("#currentYear");
 
-const currentYear = document.currentYear("currentYear");
+const time = new Date()
 
-console.log()
+currentYear.innerHTML = time.getFullYear();
+lastModified.innerHTML = "Last Modification: " + document.lastModified;

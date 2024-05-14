@@ -1,1 +1,1 @@
-var 
+document.querySelector("#temp").innerHTML = "65";
