@@ -2,6 +2,10 @@
 
 body {
     background-color: rgb(192, 201, 198);
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -48,6 +52,7 @@ h2, .icon {
     text-align: right;
     font-weight: bold;
     background-color: white;
+    padding-left: 19px;
 }
 
 .alignleft {
@@ -55,6 +60,7 @@ h2, .icon {
     grid-column-end: 4;
     text-align: left;
     background-color: white;
+    padding-right: 19px;
 }
 
 footer {

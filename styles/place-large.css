@@ -1,5 +1,13 @@
 @media screen and (min-width: 800px) {
     
+    body {
+        width: 100%;
+    }
+    
+    .alignright, .alignleft {
+        padding: 0;
+    }
+
     .center {
         width: 100%;
         margin-bottom: 0;

@@ -1,0 +1,14 @@
+thead {
+    background-color: black;
+
+}
+
+th {
+    border: black solid 1px;
+    padding: 5px;
+    background-color: blue;
+}
+
+scope {
+    background-color: blueviolet;
+}
