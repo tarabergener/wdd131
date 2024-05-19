@@ -64,28 +64,28 @@ const temples = [
 	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
 	},
 	{
-	  templeName: "Mexico City Mexico",
-  	  location: "Mexico City, Mexico",
-  	  dedicated: "1983, December, 2",
-  	  area: 116642,
+	  templeName: "Salt Lake City Utah",
+  	  location: "Salt Lake City, Utah",
+  	  dedicated: "1847, April, 6",
+  	  area: 253015,
   	  imageUrl:
-  	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg"
     },	
 	{
-  	  templeName: "Mexico City Mexico",
-  	  location: "Mexico City, Mexico",
-  	  dedicated: "1983, December, 2",
-  	  area: 116642,
+  	  templeName: "Denver Colorado",
+  	  location: "Denver Colorado",
+  	  dedicated: "1986, October, 24",
+  	  area: 29117,
   	  imageUrl:
-  	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/denver-colorado/400x250/denver-colorado-temple-lds-845690-wallpaper.jpg"
     },	
 	{
-  	  templeName: "Mexico City Mexico",
-  	  location: "Mexico City, Mexico",
-  	  dedicated: "1983, December, 2",
-  	  area: 116642,
+  	  templeName: "San Juan Puerto Rico",
+  	  location: "San Juan, Puerto Rico",
+  	  dedicated: "2023, January, 15",
+  	  area: 6988,
   	  imageUrl:
-  	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-juan-puerto-rico/400x250/san_juan_puerto_rico_temple_exterior.jpeg"
     },
   ];
 
@@ -144,6 +144,6 @@ function displayTemples(templeInfo) {
 		tile.appendChild(size);
 		tile.appendChild(image);
 
-		document.querySelector(".container").appendChild(tile);
-	})
+		document.querySelector(".container").appendChild(tile)
+	});
 }
