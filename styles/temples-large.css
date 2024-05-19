@@ -10,26 +10,18 @@
         border: 3px solid #333;
     }
 
-    main {
-        
-    }
-
     h1 {
         padding-left: 0;
         grid-column-start: 1;
         grid-column-end: 3;
     }
 
-    section {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    figure {
-        grid-column-start: 1;
-        grid-column-end: 4;
+    div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        justify-items: center;
+        text-align: center;
+        gap: 10px;
     }
 
     nav {

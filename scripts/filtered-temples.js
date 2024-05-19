@@ -130,9 +130,9 @@ function displayTemples(templeInfo) {
 		let image = document.createElement("img");
 
 		name.textContent = temple.templeName;
-		place.innerHTML = `<p id="location">Location: </p> ${temple.location}`;
-		dedicated.innerHTML = `<p id="dedication">Dedicated: </p> ${temple.dedicated}`;
-		size.innerHTML = `<p id="size">Size: </p> ${temple.area}`;
+		place.innerHTML = `<p id="location">Location: ${temple.location}</p>`;
+		dedicated.innerHTML = `<p id="dedication">Dedicated: ${temple.dedicated}</p>`;
+		size.innerHTML = `<p id="size">Size: ${temple.area} sq ft</p>`;
 		image.setAttribute("src", temple.imageUrl);
 		image.setAttribute("alt", `${temple.templeName} Temple`);
 		image.setAttribute("loading", "lazy");
