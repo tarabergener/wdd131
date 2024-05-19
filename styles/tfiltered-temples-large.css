@@ -4,32 +4,26 @@
         background-color: #4b4a4a;
     }
 
-    main, header, footer {
+    header, footer {
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
         border: 3px solid #333;
     }
 
     main {
-        
+        width: 100%;
+        margin-bottom: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    #
 
     h1 {
         padding-left: 0;
         grid-column-start: 1;
         grid-column-end: 3;
-    }
-
-    section {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    figure {
-        grid-column-start: 1;
-        grid-column-end: 4;
     }
 
     nav {

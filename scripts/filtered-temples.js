@@ -64,25 +64,77 @@ const temples = [
 	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
 	},
 	{
-		templeName: "Mexico City Mexico",
-		location: "Mexico City, Mexico",
-		dedicated: "1983, December, 2",
-		area: 116642,
-		imageUrl:
-		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-	  },	{
-		templeName: "Mexico City Mexico",
-		location: "Mexico City, Mexico",
-		dedicated: "1983, December, 2",
-		area: 116642,
-		imageUrl:
-		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-	  },	{
-		templeName: "Mexico City Mexico",
-		location: "Mexico City, Mexico",
-		dedicated: "1983, December, 2",
-		area: 116642,
-		imageUrl:
-		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-	  },
+	  templeName: "Mexico City Mexico",
+  	  location: "Mexico City, Mexico",
+  	  dedicated: "1983, December, 2",
+  	  area: 116642,
+  	  imageUrl:
+  	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },	
+	{
+  	  templeName: "Mexico City Mexico",
+  	  location: "Mexico City, Mexico",
+  	  dedicated: "1983, December, 2",
+  	  area: 116642,
+  	  imageUrl:
+  	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },	
+	{
+  	  templeName: "Mexico City Mexico",
+  	  location: "Mexico City, Mexico",
+  	  dedicated: "1983, December, 2",
+  	  area: 116642,
+  	  imageUrl:
+  	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },
   ];
+
+displayTemples(temples);
+
+
+const oldPage = document.querySelector('#old');
+oldPage.addEventListener("click", () => (
+	displayTemples(temples.filter(temple => temple.dedicated.contains(1900))
+)))
+
+const newPage = document.querySelector('#new');
+newPage.addEventListener("click", () => (
+	displayTemples(temples.filter(temple => temple.dedicated ))
+))
+
+const largePage = document.querySelector('#large');
+largePage.addEventListener("click", )
+
+const smallPage = document.querySelector('#small');
+smallPage.addEventListener("click", )
+
+
+function displayTemples(templeInfo) {
+
+	document.querySelector(".container").innerHTML = "";
+	templeInfo.forEach(temple => {
+
+		let tile = document.createElement("section");
+		let name = document.createElement("h3");
+		let place = document.createElement("p");
+		let dedicated = document.createElement("p");
+		let size = document.createElement("p");
+		let image = document.createElement("img");
+
+		name.textContent = temple.templeName;
+		place.innerHTML = `<p id="location">Location: </p> ${temple.location}`;
+		dedicated.innerHTML = `<p id="dedication">Dedicated: </p> ${temple.dedicated}`;
+		size.innerHTML = `<p id="size">Size: </p> ${temple.area}`;
+		image.setAttribute("src", temple.imageUrl);
+		image.setAttribute("loading", "lazy")
+		
+
+		tile.appendChild(name);
+		tile.appendChild(place);
+		tile.appendChild(dedicated);
+		tile.appendChild(size);
+		tile.appendChild(image);
+
+		document.querySelector(".container").appendChild(tile);
+	})
+}
