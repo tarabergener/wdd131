@@ -94,20 +94,28 @@ displayTemples(temples);
 
 const oldPage = document.querySelector('#old');
 oldPage.addEventListener("click", () => (
-	displayTemples(temples.filter(temple => temple.dedicated.contains(1900))
-)))
+	displayTemples(temples.filter(temple => temple.dedicated < "1900")
+)));
 
 const newPage = document.querySelector('#new');
 newPage.addEventListener("click", () => (
-	displayTemples(temples.filter(temple => temple.dedicated ))
-))
+	displayTemples(temples.filter(temple => temple.dedicated > "2000"))
+));
 
 const largePage = document.querySelector('#large');
-largePage.addEventListener("click", )
+largePage.addEventListener("click", () => (
+	displayTemples(temples.filter(temple => temple.area > "90000"))
+));
 
 const smallPage = document.querySelector('#small');
-smallPage.addEventListener("click", )
+smallPage.addEventListener("click", () => (
+	displayTemples(temples.filter(temple => temple.area < "10000"))
+));
 
+const homePage = document.querySelector('#home');
+homePage.addEventListener("click", () => (
+	displayTemples(temples)	
+));
 
 function displayTemples(templeInfo) {
 
@@ -126,7 +134,8 @@ function displayTemples(templeInfo) {
 		dedicated.innerHTML = `<p id="dedication">Dedicated: </p> ${temple.dedicated}`;
 		size.innerHTML = `<p id="size">Size: </p> ${temple.area}`;
 		image.setAttribute("src", temple.imageUrl);
-		image.setAttribute("loading", "lazy")
+		image.setAttribute("alt", `${temple.templeName} Temple`);
+		image.setAttribute("loading", "lazy");
 		
 
 		tile.appendChild(name);
