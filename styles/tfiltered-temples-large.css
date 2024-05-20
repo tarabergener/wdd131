@@ -4,7 +4,7 @@
         background-color: #4b4a4a;
     }
 
-    main, header, footer {
+    header, footer {
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
         border: 3px solid #333;
