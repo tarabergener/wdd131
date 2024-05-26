@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review - WDD131 - Tara Bergener</title>
+    <meta author="Tara Bergener">
+    <meta description="A page to review products and company to receive feedback">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html"></form>
+            <fieldset>
+                <legend></legend>
+                <div>Product Name</div>
+                    <select id="product" name="procduct" required>
+                        <option disabled selected>Select a Product...</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </label>
+                <div id="rating" name="rating" required>Overall Rating</div>
+                <label>&star;</label>
+                <input type="radio" name="rating" value="one">
+                <label>&star;&star;</label>
+                <input type="radio" name="rating" value="two">
+                <label>&star;&star;&star;</label>
+                <input type="radio" name="rating" value="three">
+                <label>&star;&star;&star;&star;</label>
+                <input type="radio" name="rating" value="four">
+                <label>&star;&star;&star;&star;&star;</label>
+                <input type="radio" name="rating" value="five">
+                <div>Date of Installation*</div>
+                <input type="date" id="install" name="install" required>
+                <div>Useful Features</div>
+                <label><input type="checkbox" id="features" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" id="features" name="ease" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="features" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" id="features" name="design" value="yes">Design</label>
+            </fieldset>
+            <fieldset>
+                <label id="head">Written Review (Optional)</label>
+                <input type="textbox" id="review" name="review">
+            </fieldset>
+            <fieldset>
+                <label id="head">Your Name (Optional)</label>
+                <input type="textbox" id="user" name="user">
+            </fieldset>
+            <input type="submit" id="button" value="Submit Review">
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentYear">2024</span>
+             - Tara Bergener - Florida
+        </p>
+        <p id="lastModified">Last Modification: 04/28/2024 01:28:36</p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>
