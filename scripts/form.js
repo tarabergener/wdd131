@@ -25,3 +25,9 @@ const products = [
       averagerating: 5.0
     }
   ];
+
+const input = document.querySelector('.button');
+
+let reviewsArray = Number(window.localStorage.getItem("reviewsArray-ls")) || 0;
+if (numVisits != 0) {visitsDisplay.textContent = numVisits}
+else {}
