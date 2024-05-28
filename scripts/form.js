@@ -26,8 +26,24 @@ const products = [
     }
   ];
 
-const input = document.querySelector('.button');
+const option = document.querySelector('.option')
 
-let reviewsArray = Number(window.localStorage.getItem("reviewsArray-ls")) || 0;
-if (numVisits != 0) {visitsDisplay.textContent = numVisits}
-else {}
+products.forEach(function(product) {
+  option.textContent(product.name);
+});
+
+
+const reviews = document.querySelector('.reviews');
+
+let reviewsArray = Number(window.localStorage.getItem("reviews-ls"));
+
+if (reviewsArray !== 0) {
+  reviews.textContent = "Number of Reviews: " + reviewsArray;
+}
+else {
+  reviews.textContent = "Yay! We got our first review!";
+}
+
+reviewsArray++;
+
+localStorage.setItem("reviews-ls", reviewsArray);
