@@ -26,10 +26,12 @@ const products = [
     }
   ];
 
-const option = document.querySelector('.option')
+const productName = document.querySelector('.option')
+const id = document
 
 products.forEach(function(product) {
-  option.textContent(product.name);
+  productName.textContent(product.name);
+  id.textContent(product.id);
 });
 
 
