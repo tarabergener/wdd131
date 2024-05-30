@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+header {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 50%;
+    background-color: rgba(124, 97, 71, 0.479);
+}
+
+h1, h2, h4 {
+    font-family: 'DM Sans', Serif;
+}
+
+h1 {
+    font-size: 75px;
+    background-color: black;
+    color: white;
+    padding: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#logo {
+    display: grid;
+    grid-column-start: 0;
+    grid-column-end: 1;
+    float: left;
+    padding: 10px;
+}
+
+#slogan {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    float: right;
+    background-color: black;
+    color: white;
+    padding: 100px;
+}
+
+nav {
+    display: grid;
+    grid-column-start: -2;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    padding-top: 1.5rem;
+    margin-top: 0;
+}
+
+#link {
+    padding: 35px;
+    font-size: 25px;
+}
+
+.navmenu {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+a, #promotion {
+    font-family: 'Roboto Serif', Serif;
+    text-decoration: none;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+}
+
+#promotion {
+    font-weight: bold;
+    font-size: 50px;
+    display: absolute;
+    color:rgba(134, 104, 76, 0.651)
+}
