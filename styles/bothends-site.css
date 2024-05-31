@@ -205,7 +205,12 @@ section {
 }
 
 #shopping {
-    margin: 150px;
+    margin-top: 150px;
+}
+
+#cart-img {
+    position: relative;
+    width: 50%;
 }
 
 /*---------------footer--------------*/
@@ -214,4 +219,6 @@ footer {
     font-family: 'Roboto serif', serif;
     text-align: center;
     background-color: rgba(124, 97, 71, 0.479);
+    padding: 15px;
+    margin-top: 20px;
 }
