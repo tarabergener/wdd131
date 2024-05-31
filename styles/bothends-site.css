@@ -117,12 +117,6 @@ p {
     font-size: 15px;
 }
 
-div, #head {
-    font-weight: bold;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-}
-
 #button {
     margin-bottom: 1rem;
     padding: 15px 30px 15px 30px;
@@ -158,9 +152,60 @@ section {
     padding: 10px;
 }
 
+.box {
+    height: 15px;
+    width: 15px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+    background-color: black;
+  }
+  
+  .gray {
+    background-color: gray;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+
+  .purple {
+    background-color: purple;
+  }
+
 #socks, #ties, #sets {
     width: 350px;
     height: 350px;
+}
+
+/*---------------shopping cart page--------------*/
+
+#cart {
+    text-align: center;
+    font-size: 30px;
+}
+
+#item-count, #shopping {
+    text-align: center;
+}
+
+#shopping {
+    margin: 150px;
 }
 
 /*---------------footer--------------*/
