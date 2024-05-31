@@ -30,11 +30,37 @@
         <a id="promotion" href="bothends-site-shop.html">
             <img id="hero" src="images/sale_hero.png">
         </a>
-        <h2>Products</h2>
-        <a href=""
+        <h2 id="subscribe">Get 10% OFF with Promotional Emails!</h2>
+        <form method="get" action="review.html"></form>
+        <fieldset>
+            <label>First Name* <input type="text" name="fname" required></label>
+            <label>Last Name <input type="text" name="lname"></label>
+            <label>Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+            <p id="form">Enter your birthday day to get special deals!</p>
+            <label>Birthday <input type="date" name="completeDate"></label>
+            <p id="form">We respect your time! How often would you like to receive promotional emails?</p>
+            <label>Email Frequency
+                <select name="subject">
+                    <option>Please select one</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="biweek">Bi-weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="occasional">Occasionally</option>
+            </select>
+            </label>
+            <p></p>
+            <input type="submit" class="button" id="button" value="Get 10% OFF Today!">
+        </fieldset>
     </main>
     <footer>
-
+        <p>
+            &copy;
+            <span id="currentYear">2024</span>
+             - Tara Bergener - Florida
+        </p>
+        <p id="lastModified">Last Modification: 04/28/2024 01:28:36</p>
     </footer>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>

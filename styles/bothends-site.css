@@ -70,6 +70,7 @@ ul {
 a, #promotion {
     font-family: 'Roboto Serif', Serif;
     text-decoration: none;
+    color: black;
 }
 
 #hero {
@@ -82,4 +83,90 @@ a, #promotion {
     font-size: 50px;
     display: absolute;
     color:rgba(134, 104, 76, 0.651)
+}
+
+/*---------------subscribe form--------------*/
+
+#subscribe {
+    text-align: center;
+    background-color: rgb(156, 29, 6);
+    padding-bottom: 30px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+fieldset {
+    border: 2px solid rgb(177, 174, 174);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding-top: 1.5rem;
+    text-align: center;
+    border-width: 3px;
+}
+
+label {
+    font-family: 'Roboto serif', serif;
+    padding: 15px;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Roboto serif', serif;
+    font-size: 15px;
+}
+
+div, #head {
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+#button {
+    margin-bottom: 1rem;
+    padding: 15px 30px 15px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color:rgba(79, 83, 80, 0.692);
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+#button:hover {
+    background-color: rgba(121, 124, 122, 0.692);
+}
+
+/*---------------shopping page--------------*/
+
+#grid {
+    display: grid;
+    grid-template-columns: 15% 80%;
+}
+
+#shop {
+    float: right;
+}
+
+section {
+    padding: 15px;
+    border: 2px solid black;
+}
+
+#list {
+    padding: 10px;
+}
+
+#socks, #ties, #sets {
+    width: 350px;
+    height: 350px;
+}
+
+/*---------------footer--------------*/
+
+footer {
+    font-family: 'Roboto serif', serif;
+    text-align: center;
+    background-color: rgba(124, 97, 71, 0.479);
 }
