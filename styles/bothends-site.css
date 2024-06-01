@@ -193,6 +193,13 @@ p {
     background-color: purple;
   }
 
+  .container {
+    display: flex;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    flex-wrap: wrap;
+  }
+
 /*---------------shopping cart page--------------*/
 
 #cart {

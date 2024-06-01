@@ -15,7 +15,7 @@ const inventory = [
       imageUrl: "images/tie-green-bay.jpg"
     },
 	{
-	  prodcutName: "Lavender Lane",
+	  productName: "Lavender Lane",
       category: "Necktie",
 	  price: 30,
       color: "purple",
