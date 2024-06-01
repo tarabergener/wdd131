@@ -166,8 +166,8 @@ function displayInventory(productInfo) {
 		let image = document.createElement("img");
 
 		name.textContent = product.productName;
-		category.innerHTML = `<p id="dedication">Category: ${product.category}</p>`;
-		price.innerHTML = `<p id="size">Price: $${product.price}</p>`;
+		category.innerHTML = `<p id="category">Category: ${product.category}</p>`;
+		price.innerHTML = `<p id="price">Price: $${product.price}</p>`;
 		image.setAttribute("src", product.imageUrl);
 		image.setAttribute("alt", `${product.productName}`);
 		image.setAttribute("loading", "lazy");

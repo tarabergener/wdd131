@@ -200,6 +200,10 @@ p {
     flex-wrap: wrap;
   }
 
+  #category {
+    margin: 10px;
+  }
+
 /*---------------shopping cart page--------------*/
 
 #cart {
