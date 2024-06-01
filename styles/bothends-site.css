@@ -85,6 +85,15 @@ a, #promotion {
     color:rgba(134, 104, 76, 0.651)
 }
 
+#sock, #tie, #set {
+    width: 350px;
+    height: 350px;
+}
+
+section {
+    ;
+}
+
 /*---------------subscribe form--------------*/
 
 #subscribe {
@@ -139,22 +148,18 @@ p {
     grid-template-columns: 15% 80%;
 }
 
-#shop {
-    float: right;
-}
-
-section {
+#filters, section {
     padding: 15px;
     border: 2px solid black;
 }
 
-#list {
+.list {
     padding: 10px;
 }
 
 .box {
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     margin-bottom: 15px;
     border: 1px solid black;
 
@@ -177,7 +182,7 @@ section {
   }
   
   .gray {
-    background-color: gray;
+    background-color: white;
   }
   
   .yellow {
@@ -187,11 +192,6 @@ section {
   .purple {
     background-color: purple;
   }
-
-#socks, #ties, #sets {
-    width: 350px;
-    height: 350px;
-}
 
 /*---------------shopping cart page--------------*/
 
