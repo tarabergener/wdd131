@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+@media (max-width: 640px) {
+
+    header, main, footer {
+        min-width: 640px;
+        margin: 1rem auto;
+        border: 1px solid #bbb;
+        padding: 1rem;
+    }
+    
+    header, footer {
+        background-color: rgba(124, 97, 71, 0.479);
+        color: #fff;
+    }
+    
+    header {
+        display: flex;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+        text-align: center;
+    }
+    
+    section {
+        background-color: rgba(124, 97, 71, 0.479);
+        border-radius: 3px;
+        margin: 2rem;
+        padding: 1rem;
+        padding-top: 5px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.315);
+        transition: 0.2s;
+    }
+    
+    nav {
+        text-align: right;
+    }
+    
+    a {
+        padding: 5px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .navmenu {
+        list-style: none;
+    }
+    
+    .navmenu li {
+        display: none;
+    }
+    
+    .open li {
+        display: block;
+    }
+    
+    .navmenu a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+    
+    #hamburger::before {
+        content: "≡";
+    }
+    
+    #hamburger.open::before {
+        content: "x";
+        font-family: "DM Sans", serif;
+        font-size: 35px;
+    }
+    
+    #hamburger {
+        font-size: 2.5rem;
+        font-weight:700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color:  rgba(47, 134, 134, 0);
+        color: black;
+        border: none;
+    }
+    
+    #hamburger:hover {
+        color: black;
+    }
+    
+    .open a {
+        color: black;
+        display: block;
+    }
+    
+    figure {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    footer {
+        text-align: center;
+    }
+}
