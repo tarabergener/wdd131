@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
-@media (max-width: 640px) {
+@media (max-width: 850px) {
 
     header, main, footer {
         min-width: 640px;
@@ -8,21 +8,36 @@
         border: 1px solid #bbb;
         padding: 1rem;
     }
+
+    h1, #slogan {
+        color: black;
+        background-color: rgba(124, 97, 71, 0.007);
+    }
     
     header, footer {
         background-color: rgba(124, 97, 71, 0.479);
-        color: #fff;
+        color: black;
     }
     
     header {
-        display: flex;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-    
+
+    h1 {
+        font-size: 45px;
+    }
+
+    #slogan {
+        display: flex;
+
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 0.5rem;
-        text-align: center;
     }
     
     section {
@@ -35,14 +50,15 @@
         transition: 0.2s;
     }
     
-    nav {
-        text-align: right;
+    .navmenu {
+        display: flex;
+        flex-direction: column;
+
     }
     
     a {
         padding: 5px;
         text-decoration: none;
-        color: #fff;
         font-size: 20px;
     }
     
@@ -104,4 +120,9 @@
     footer {
         text-align: center;
     }
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 30% 65%;
 }

@@ -163,21 +163,21 @@ p {
 
 #grid {
     display: grid;
-    grid-template-columns: 15% 80%;
+    grid-template-columns: 20% 80%;
 }
 
 #filters {
-    padding: 15px;
+    padding: 2px;
     border: 2px solid black;
 }
 
 .list {
-    padding: 10px;
+    padding: 1px;
 }
 
 .box {
     height: 10px;
-    width: 10px;
+    width: 1px;
     margin-bottom: 10px;
     border: 1px solid black;
 }
@@ -229,7 +229,7 @@ section {
 }
 
 #category {
-  margin: 10px;
+    margin: 1px;
 }
 
 /*---------------shopping cart page--------------*/

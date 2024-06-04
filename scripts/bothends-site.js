@@ -57,24 +57,33 @@ const inventory = [
 	  imageUrl: "images/tie-yellow.jpg"
 	},
 	{
-	  productName: "",
+	  productName: "Tie-Dye",
       category: "Socks",
   	  price: 20,
-  	  imageUrl: ""
+	  color: "red",
+  	  imageUrl: "images/tie-dye-sock.png"
     },	
 	{
-      productName: "",
+      productName: "Don't Matter",
       category: "Socks",
       price: 20,
-      imageUrl: ""
+	  color: "white",
+      imageUrl: "images/black-white-sock.png"
     },		
     {
-      productName: "",
+      productName: "Taste the Rainbow",
       category: "Socks",
       price: 20,
-      imageUrl: ""
-    },	
-  ];
+	  color: "yellow",
+      imageUrl: "images/rainbow-sock.png"
+    },
+	{
+	productName: "You're All Set",
+	category: "Socks",
+	price: 50,
+	imageUrl: "images/gift-set.png"
+    },
+];
 
 displayInventory(inventory);
 
@@ -136,12 +145,12 @@ underPage.addEventListener("click", () => (
 
 const thirtyPage = document.querySelector('#thirty');
 thirtyPage.addEventListener("click", () => (
-	displayInventory(inventory.filter(product => product.price > 20 < 30))
+	displayInventory(inventory.filter(product => product.price > 20))
 ));
 
 const fortyPage = document.querySelector('#forty');
 fortyPage.addEventListener("click", () => (
-	displayInventory(inventory.filter(product => product.price > 30 < 40))
+	displayInventory(inventory.filter(product => product.price > 30))
 ));
 
 const overPage = document.querySelector('#over');
