@@ -182,7 +182,7 @@ p {
     border: 1px solid black;
 }
 
-#color {
+.color {
     display: flex;
     flex-direction: column;
     margin-right: 5px;
