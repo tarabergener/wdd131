@@ -54,7 +54,7 @@ nav {
     justify-content: right;
 }
 
-#link {
+.link {
     padding: 35px;
     font-size: 25px;
 }
