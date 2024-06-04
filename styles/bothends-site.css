@@ -95,7 +95,7 @@ a, #promotion {
     justify-content: center;
 }
 
-#shop {
+.shop {
     display: flex;
     flex-direction: column;
     align-items: center;
