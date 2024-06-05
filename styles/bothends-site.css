@@ -236,20 +236,32 @@ section {
 
 #cart {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
-#item-count, #shopping {
+#item-count {
     text-align: center;
+    font-family: 'Roboto serif', serif;
+    font-size: 18px;
 }
 
 .shopping {
-    margin-top: 150px;
+    margin-top: 170px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-family: 'DM Sans', serif;
+    font-size: 25px;
+    color: rgb(56, 56, 170);
 }
 
 #cart-img {
-    position: relative;
+    display: absolute;
+    justify-items: center;
     width: 50%;
+    margin-top: 0;
 }
 
 /*---------------footer--------------*/
