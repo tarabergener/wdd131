@@ -2,8 +2,14 @@
 
 @media (max-width: 850px) {
 
+    logo {
+        margin: 0;
+        padding: 0;
+    }
+
     .navmenu {
-        list-style: none;
+        display: flex;
+        flex-direction: column;
     }
     
     .navmenu li {
@@ -16,11 +22,17 @@
 
     #hamburger::before {
         content: "≡";
+        padding: 0;
+        margin: 0;
+        float: right;
     }
     
     #hamburger.open::before {
         content: "x";
         font-family: "DM Sans", serif;
+        padding: 0;
+        margin: 0;
+        float: right;
     }
     
     #hamburger {
