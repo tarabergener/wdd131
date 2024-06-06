@@ -2,7 +2,7 @@
 
 @media (max-width: 850px) {
 
-    logo {
+    #logo {
         margin: 0;
         padding: 0;
     }
@@ -57,6 +57,21 @@
         width: 100%;
         max-width: 400px;
         height: auto;
+    }
+
+    section {
+        background-color: rgba(124, 97, 71, 0.479);
+        border-radius: 3px;
+        margin: 2rem;
+        padding: 1rem;
+        padding-top: 5px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.315);
+        transition: 0.2s;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 30% 65%;
     }
 
 }
